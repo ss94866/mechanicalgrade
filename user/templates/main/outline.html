@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>sem1</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body class="container">
+
+
+<div class="sem1">
+  <a href="{% url "sem1" %}">
+    <button type="button" name="sem1">Semester1</button>
+  </a>
+</div>
+
+
+<div class="sem2">
+  <a href="{% url "sem2" %}">
+    <button type="button" name="sem2">Semester2</button>
+  </a>
+</div>
+
+
+<div class="sem3">
+  <a href="{% url "sem3" %}">
+    <button type="button" name="sem3">Semester3</button>
+  </a>
+</div>
+
+
+<div class="sem4">
+  <a href="{% url "sem4" %}">
+    <button type="button" name="sem4">Semester4</button>
+  </a>
+</div>
+
+
+<div class="sem5">
+  <a href="{% url "sem5" %}">
+    <button type="button" name="sem5">Semester5</button>
+  </a>
+</div>
+
+
+<div class="sem6">
+  <a href="{% url "sem6" %}">
+    <button type="button" name="sem6">Semester6</button>
+  </a>
+</div>
+
+
+<div class="sem7">
+  <a href="{% url "sem7" %}">
+    <button type="button" name="sem7">Semester7</button>
+  </a>
+</div>
+
+
+<div class="sem8">
+  <a href="{% url "sem8" %}">
+    <button type="button" name="sem8">Semester8</button>
+  </a>
+</div>
+
+
+<div class="table-responsive-sm">
+{% block div %}
+
+{% endblock %}
+</div>
+
+
+
+<a href="{% url "home" %}">Back</a>
+  </body>
+</html>

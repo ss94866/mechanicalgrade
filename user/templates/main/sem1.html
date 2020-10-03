@@ -1,0 +1,356 @@
+{% extends "main/nav.html" %}
+
+
+{% block div %}
+{% if Error %}
+<center>{{Error}}</center>
+{% endif %}
+<center>{% if message %}
+  <h3>{{message}}</h3>
+  {% endif %}</center>
+{% if message == "sem1"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>EngineeringPhysics</td>
+        <td>{{Sem1.EngineeringPhysics}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringGraphics</td>
+        <td>{{Sem1.EngineeringGraphics}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringChemistry</td>
+        <td>{{Sem1.EngineeringChemistry}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringMathematics</td>
+        <td>{{Sem1.EngineeringMathematics}}</td>
+      </tr>
+      <tr>
+        <td>CommunicativeEnglish</td>
+        <td>{{Sem1.CommunicativeEnglish}}</td>
+      </tr>
+      <tr>
+        <td>ProgramSolvingAndPythonProgramming</td>
+        <td>{{Sem1.ProgramSolvingAndPythonProgramming}}</td>
+      </tr>
+      <tr>
+        <td>ProgramSolvingAndPythonProgrammingLaboratory</td>
+        <td>{{Sem1.ProgramSolvingAndPythonProgrammingLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>PhysicsandChemistryLaboratory</td>
+        <td>{{Sem1.PhysicsandChemistryLaboratory}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem2"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TechnicalEnglish</td>
+        <td>{{Sem2.TechnicalEnglish}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringMathematicsII</td>
+        <td>{{Sem2.EngineeringMathematicsII}}</td>
+      </tr>
+      <tr>
+        <td>MaterialsScience</td>
+        <td>{{Sem2.MaterialsScience}}</td>
+      </tr>
+      <tr>
+        <td>BasicElectricalElectronicsandInstrumentationEngineering</td>
+        <td>{{Sem2.BasicElectricalElectronicsandInstrumentationEngineering}}</td>
+      </tr>
+      <tr>
+        <td>EnvironmentalScienceandEngineering</td>
+        <td>{{Sem2.EnvironmentalScienceandEngineering}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringMechanics</td>
+        <td>{{Sem2.EngineeringMechanics}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringPracticesLaboratory</td>
+        <td>{{Sem2.EngineeringPracticesLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>BasicElectricalElectronicsandInstrumentationEngineeringLaboratory</td>
+        <td>{{Sem2.BasicElectricalElectronicsandInstrumentationEngineeringLaboratory}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem3"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>TransformsandPartialDifferentialEquations</td>
+        <td>{{Sem3.TransformsandPartialDifferentialEquations}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringThermodynamics</td>
+        <td>{{Sem3.EngineeringThermodynamics}}</td>
+      </tr>
+      <tr>
+        <td>FluidMechanicsandMachinery</td>
+        <td>{{Sem3.FluidMechanicsandMachinery}}</td>
+      </tr>
+      <tr>
+        <td>ManufacturingTechnologyI</td>
+        <td>{{Sem3.ManufacturingTechnologyI}}</td>
+      </tr>
+      <tr>
+        <td>ElectricalDrivesandControls</td>
+        <td>{{Sem3.ElectricalDrivesandControls}}</td>
+      </tr>
+      <tr>
+        <td>ManufacturingTechnologyLaboratoryI</td>
+        <td>{{Sem3.ManufacturingTechnologyLaboratoryI}}</td>
+      </tr>
+      <tr>
+        <td>ComputerAidedMachineDrawing</td>
+        <td>{{Sem3.ComputerAidedMachineDrawing}}</td>
+      </tr>
+      <tr>
+        <td>ElectricalEngineeringLaboratory</td>
+        <td>{{Sem3.ElectricalEngineeringLaboratory}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem4"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>StatisticsandNumericalMethods</td>
+        <td>{{Sem4.StatisticsandNumericalMethods}}</td>
+      </tr>
+      <tr>
+        <td>KinematicsofMachinery</td>
+        <td>{{Sem4.KinematicsofMachinery}}</td>
+      </tr>
+      <tr>
+        <td>ManufacturingTechnologyII</td>
+        <td>{{Sem4.ManufacturingTechnologyII}}</td>
+      </tr>
+      <tr>
+        <td>EngineeringMetallurgy</td>
+        <td>{{Sem4.EngineeringMetallurgy}}</td>
+      </tr>
+      <tr>
+        <td>StrengthofMaterialsforMechanicalEngineers</td>
+        <td>{{Sem4.StrengthofMaterialsforMechanicalEngineers}}</td>
+      </tr>
+      <tr>
+        <td>ThermalEngineeringI</td>
+        <td>{{Sem4.ThermalEngineeringI}}</td>
+      </tr>
+      <tr>
+        <td>ManufacturingTechnologyLaboratoryII</td>
+        <td>{{Sem4.ManufacturingTechnologyLaboratoryII}}</td>
+      </tr>
+      <tr>
+        <td>StrengthofMaterialsandFluidMechanicsandMachineryLaboratory</td>
+        <td>{{Sem4.StrengthofMaterialsandFluidMechanicsandMachineryLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>AdvancedReadingandWriting</td>
+        <td>{{Sem4.AdvancedReadingandWriting}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem5"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ThermalEngineeringII</td>
+        <td>{{Sem5.ThermalEngineeringII}}</td>
+      </tr>
+      <tr>
+        <td>DesignofMachineElements</td>
+        <td>{{Sem5.DesignofMachineElements}}</td>
+      </tr>
+      <tr>
+        <td>MetrologyandMeasurements</td>
+        <td>{{Sem5.MetrologyandMeasurements}}</td>
+      </tr>
+      <tr>
+        <td>DynamicsofMachines</td>
+        <td>{{Sem5.DynamicsofMachines}}</td>
+      </tr>
+      <tr>
+        <td>OpenElectiveI</td>
+        <td>{{Sem5.OpenElectiveI}}</td>
+      </tr>
+      <tr>
+        <td>KinematicsandDynamicsLaboratory</td>
+        <td>{{Sem5.KinematicsandDynamicsLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>ThermalEngineeringLaboratory</td>
+        <td>{{Sem5.ThermalEngineeringLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>MetrologyandMeasurementsLaboratory</td>
+        <td>{{Sem5.MetrologyandMeasurementsLaboratory}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem6"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>DesignofTransmissionSystems</td>
+        <td>{{Sem6.DesignofTransmissionSystems}}</td>
+      </tr>
+      <tr>
+        <td>ComputerAidedDesignandManufacturing</td>
+        <td>{{Sem6.ComputerAidedDesignandManufacturing}}</td>
+      </tr>
+      <tr>
+        <td>HeatandMassTransfer</td>
+        <td>{{Sem6.HeatandMassTransfer}}</td>
+      </tr>
+      <tr>
+        <td>FiniteElementAnalysis</td>
+        <td>{{Sem6.FiniteElementAnalysis}}</td>
+      </tr>
+      <tr>
+        <td>HydraulicsandPneumatics</td>
+        <td>{{Sem6.HydraulicsandPneumatics}}</td>
+      </tr>
+      <tr>
+        <td>ProfessionalElectiveI</td>
+        <td>{{Sem6.ProfessionalElectiveI}}</td>
+      </tr>
+      <tr>
+        <td>CADCAMLaboratory</td>
+        <td>{{Sem6.CADCAMLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>DesignandFabricationProject</td>
+        <td>{{Sem6.DesignandFabricationProject}}</td>
+      </tr>
+      <tr>
+        <td>ProfessionalCommunication</td>
+        <td>{{Sem6.ProfessionalCommunication}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem7"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PowerPlantEngineering</td>
+        <td>{{Sem7.PowerPlantEngineering}}</td>
+      </tr>
+      <tr>
+        <td>ProcessPlanningandCostEstimation</td>
+        <td>{{Sem7.ProcessPlanningandCostEstimation}}</td>
+      </tr>
+      <tr>
+        <td>Mechatronics</td>
+        <td>{{Sem7.Mechatronics}}</td>
+      </tr>
+      <tr>
+        <td>OpenElectiveII</td>
+        <td>{{Sem7.OpenElectiveII}}</td>
+      </tr>
+      <tr>
+        <td>ProfessionalElectiveII</td>
+        <td>{{Sem7.ProfessionalElectiveII}}</td>
+      </tr>
+      <tr>
+        <td>ProfessionalElectiveIII</td>
+        <td>{{Sem7.ProfessionalElectiveIII}}</td>
+      </tr>
+      <tr>
+        <td>SimulationandAnalysisLaboratory\</td>
+        <td>{{Sem7.SimulationandAnalysisLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>MechatronicsLaboratory</td>
+        <td>{{Sem7.MechatronicsLaboratory}}</td>
+      </tr>
+      <tr>
+        <td>TechnicalSeminar</td>
+        <td>{{Sem7.TechnicalSeminar}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+{% if message == "sem8"%}
+<table class="table table-hover-responsive">
+    <thead>
+        <tr>
+          <th scope="col">Subjects</th>
+          <th scope="col">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PrinciplesofManagement</td>
+        <td>{{Sem8.PrinciplesofManagement}}</td>
+      </tr>
+      <tr>
+        <td>ProfessionalElectiveIV</td>
+        <td>{{Sem8.ProfessionalElectiveIV}}</td>
+      </tr>
+      <tr>
+        <td>ProjectWork</td>
+        <td>{{Sem8.ProjectWork}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% endif %}
+
+{%  endblock %}

@@ -1,0 +1,121 @@
+{% load static %}
+<!DOCTYPE html> 
+<html> 
+<style> 
+    
+      
+    form { 
+        border: 3px solid #f1f1f1; 
+    } 
+    
+      
+    input[type=text], 
+    input[type=date] { 
+        width: 60%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    
+      
+    .cancelbtn { 
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 14px 20px;
+         
+        margin:  8px 0; 
+        border-radius: 10px;
+        border:none; 
+        cursor: pointer; 
+        width: 10%;
+
+    } 
+   
+      
+    button:hover { 
+        opacity: 0.8; 
+    } 
+    
+      
+    .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px; 
+        background-color: #f44336; 
+    } 
+   
+      
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+    } 
+   
+      
+    img.avatar { 
+        width: 10%; 
+        border-radius: 10%; 
+    } 
+   
+      
+    .container { 
+        padding: 16px; 
+    } 
+    
+      
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+    } 
+    
+      
+    @media screen and (max-width: 300px) { 
+        span.psw { 
+            display: block; 
+            float: none; 
+        } 
+        .cancelbtn { 
+            width: 100%; 
+        } 
+    } 
+</style> 
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+<body> 
+  
+    <center><h2 >LOGIN</h2> </center>
+   
+    <form method="POST"> 
+        {% csrf_token %}
+        <div class="imgcontainer"> 
+            <img src="{% static 'images/logo.jpg' %}"
+                 alt="Avatar" class="avatar"> 
+        </div> 
+        <center>
+            <div class="container"> 
+                <label><b>Register Number</b></label> <br>
+                <input type="text" placeholder="Enter Username" name="username" required> <br>
+      
+                <label><b>Date of Birth</b></label> <br>
+                <input type="date" placeholder="" name="password" required> <br>
+      
+            <button type="submit" class="btn btn-success">Login</button> 
+            <div style="text-align:center;font-weight:bold;">
+                {% if message %}
+                {{ message }}
+                {% endif %}
+              </div>  
+            </div> 
+      
+        </center>
+        
+        <div class="container" style="background-color:#fcf9f9"> 
+            <h5>New?</h5><a href="{%url 'register'%}"><button type="button" class="cancelbtn">Register</button></a> 
+           
+        </div> 
+    </form> 
+  
+</body> 
+  
+</html>

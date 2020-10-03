@@ -1,0 +1,145 @@
+{% extends "main/form.html" %}
+{% block body %}
+<center>
+        <h1>
+                Fill your {{message}} marks
+             </h1
+</center>
+    {% if message == "sem1"%}
+           
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem1' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+    
+        <center>
+            {{form.as_p}} 
+       </center>
+    
+            
+    
+    {% endif %}
+
+    {% if message == "sem2"%}
+
+    {% if alert %}
+
+    <div class="alert alert-success" role="alert">
+        {{alert}} <a href="{% url 'sem2' %}" class="alert-link">click Here</a> to check your Grades
+    </div>
+    
+    {% endif %}
+    
+    <center>
+                
+            {{form.as_p}}
+    
+        </center>
+    {% endif %}
+
+    {% if message == "sem3"%}
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem3' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+    
+    
+    <center>
+                    
+            {{form.as_p}}
+    
+        </center>
+    {% endif %}
+
+    {% if message == "sem4"%}
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem4' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+    
+    <center>
+                    
+            {{form.as_p}}
+    
+        </center>
+    {% endif %}
+
+    {% if message == "sem5"%}
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem5' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+    
+    <center>
+                    
+            {{form.as_p}}
+    
+        </center>
+    {% endif %}
+
+    {% if message == "sem6"%}
+    
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem6' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+
+    <center>
+                
+        {{form.as_p}}
+    
+    </center>
+    {% endif %}
+
+    {% if message == "sem7"%}
+
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem7' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+
+    <center>
+                
+        {{form.as_p}}
+    
+    </center>
+    {% endif %}
+
+    {% if message == "sem8"%}
+    
+    {% if alert %}
+
+<div class="alert alert-success" role="alert">
+    {{alert}} <a href="{% url 'sem8' %}" class="alert-link">click Here</a> to check your Grades
+</div>
+
+{% endif %}
+
+    <center>
+                
+        {{form.as_p}}
+    
+    </center>
+    {% endif %}
+
+
+
+{% endblock %}      

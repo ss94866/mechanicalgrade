@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tpgit</title>
+  <style media="screen">
+  #br{
+   border: 2px black solid;
+   padding:14px 20px;
+   margin:5% 20% 5% 10%;
+   
+  }
+  button{
+    margin-top: 5%;
+  }
+  </style>
+  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <body class="container" style="background-color:gray ;">
+    
+<div id="br" style="background-color:ghostwhite;">
+  <center>
+    <h4>Register Number : {{request.user.username}}</h4>
+    <h4>Name : {{Main.Name}}</h4>
+  
+  </center>
+
+  <div class="row">
+    <div class="col-6 col-sm-4"><a href="status/sem1"><button type="button" name="status" class="btn btn-success" style="margin-top: 5%;margin-bottom: 5%;">Status</button></a>
+    </div>
+    <div class="col-6 col-sm-4"><a href="{% url 'logout'%}"><button type="button" name="Logout" class="btn btn-danger" style="margin-top: 5%;">Logout</button></a>
+    </div>
+    <div class="col-6 col-sm-4"><a href="update/sem1"><button class="btn btn-info" style="margin-top: 5%;margin-bottom: 5%;">Update</button></a>
+    </div>
+    
+  </div>
+  
+  
+</div>
+
+  </body>
+</html>

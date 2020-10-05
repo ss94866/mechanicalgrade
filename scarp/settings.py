@@ -25,7 +25,7 @@ SECRET_KEY = 'ch%$v%%h_ai79b4p*8_a%!^_eeo^b-x2g$1+d=-c5-w2^$^+c+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mechanicalgrade.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['mechanicalgrade.herokuapp.com', '127.0.0.1', 'localhost','mechgrade.herokuapp.com']
 
 
 # Application definition
